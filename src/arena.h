@@ -1,6 +1,8 @@
 #ifndef _ARENA_H
 #define _ARENA_H
 
+#define VERSION 1
+
 typedef struct {
 	size_t current;
 	size_t capacity;
