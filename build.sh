@@ -3,4 +3,4 @@
 set -xe
 
 mkdir -p bin
-gcc -Wall -Wextra -ggdb -o bin/main src/main.c
+gcc -Wall -Wextra -ggdb -o bin/test src/test.c
