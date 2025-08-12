@@ -15,7 +15,7 @@ int main(void)
 	}
 
 	char *buffer = at_alloc(&a, sizeof(char)*32);
-	if (buffer == NULL) {
+	if ( buffer == NULL ) {
 		fprintf(stderr, "failed to alloc bytes 32\n");
 		return 2;
 	}
@@ -29,6 +29,6 @@ int main(void)
 	memmove(buffer, "maple cherry\n", 13);
   write(STDOUT_FILENO, buffer, 13);
 
-	at_free(&a);
+	at_free(a.buffer);
 	return 0;
 }
