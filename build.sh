@@ -2,5 +2,7 @@
 
 set -xe
 
+cc=tcc
+
 mkdir -p bin
-gcc -Wall -Wextra -ggdb -o bin/test src/test.c
+"$cc" -Wall -Wextra -ggdb -o bin/test src/test.c
